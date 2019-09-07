@@ -56,7 +56,7 @@ def remove_nonrequired_paper(data_before):
 
     """
     today = datetime.datetime.today()
-    yesterday = today - datetime.timedelta(days=3)
+    yesterday = today - datetime.timedelta(days=1)
     yesterday = datetime.datetime.strftime(yesterday, '%Y-%m-%d')
     ret = []
     for paper in data_before:
