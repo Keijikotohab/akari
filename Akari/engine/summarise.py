@@ -5,10 +5,10 @@ class BertSum():
         self.in_file = None
         self.out_summary = []
 
-    def summarise(self,bakend='bert'):
+    def summarize(self,bakend='bert'):
         self.in_text = open(self.in_file,"r")
         for file in self.in_text:
-            self.out_summaary.append(get_summary(file,bakend))
+            self.out_summary.append(get_summary(file,bakend))
 
     def initialize(self):
         self.in_file = None
